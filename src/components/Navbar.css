@@ -1,0 +1,350 @@
+.navbar{
+    height: 28vh;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    align-items: center;      
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px; /* ensures no white line at edge */
+  height: 60px; /* adjust as needed for fade amount */
+  pointer-events: none;
+  z-index: 10; 
+  background: linear-gradient(
+    to bottom,
+    rgba(106,9,21, 0) 0%,      /* transparent at top */
+    rgba(106,9,21, 0.4) 30%,   /* semi-transparent middle */
+    rgba(106,9,21, 0.8) 60%,   /* more solid near bottom */
+    rgba(149,12,28, 1) 100%      /* solid at bottom, use match color of bottom navbar or bottom bg image */
+  );
+}
+
+.navbar-bg {
+    position: absolute;
+    inset: 0;                   
+    background-image: url('../assets/nav-bg1.jpg');
+    background-repeat: repeat; 
+    background-size: 50%;   
+    z-index: 0;                 
+    opacity: .7;
+    pointer-events: none;        
+    background-attachment: fixed;
+}
+
+.navbar > *:not(.navbar-bg) {
+    position: relative;
+    z-index: 1;
+}
+
+.intro-text{
+    color : #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.8;
+    font-family: 'Bebas Neue';
+    font-size: clamp(1rem, 60px, 2.5rem);
+}
+
+.bottom-navbar{
+    height: 6vh;
+    background-color: #950c1c;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.bottom-navbar .logo1{
+    height: 6vh;
+    margin-left: 1vw;
+    margin-right: 1.5vw;
+}
+
+.link-H{
+    height: 4vh;
+    width: 5vw;
+    border-radius: 50px;
+}
+
+.bottom-navbar form{
+    padding-left: 1.5vw;
+    border-radius: 15px;
+}
+
+.bottom-navbar form input{
+    border: none;
+    border-radius: 15px;
+    height: 4vh;
+    width: 40vw;
+    padding: 0vw 1vw;
+    color: #950c1c;
+}
+
+.link-G{
+    height: 4vh;
+    width: 6vw;
+    margin-left: auto;
+    margin-right: 1vw;
+    border-radius: 50px;
+}
+
+.link-A{
+    height: 4vh;
+    width: 6vw;
+    margin-right: 1vw;
+    border-radius: 50px;
+}
+
+.admin{
+    height: 4vh;
+    width: 6vw;
+    margin-right: 2vw;
+    border-radius: 50px;
+}
+
+.bottom-navbar .link-A, .link-H, .link-G, .admin{
+    border: 1px solid #f5f5f5;
+    background-color: transparent;
+    color: #f5f5f5;
+}
+
+.bottom-navbar .link-A:hover, .link-H:hover, .link-G:hover , .admin:hover{
+    border: none;
+    background-color: #f5f5f5;
+    color: #950c1c;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+
+/* ---------------------------------MOBILE----------------------------------------- */
+
+@media (max-width: 425px) {
+
+    .navbar{
+        height: 16vh;
+    }
+
+    .intro-text{
+        font-size: clamp(10px, 8vw, 16px);
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .bottom-navbar{
+        height: 4vh;
+        width: 100%;    
+    }
+
+    .bottom-navbar .logo1{
+        height: 4vh;
+        margin-left: 1vw;
+        margin-right: 1.5vw;
+    }
+
+    .link-H, .link-G, .link-A, .admin{
+        height: 3vh;
+        width: 10vw;
+        font-size: clamp(8px, 2vw, 10px);
+        padding: 0px;
+    }
+
+    .bottom-navbar form input{
+        height: 3vh;
+    }
+}
+
+/* -----------------------------------TABLET------------------------------------------- */
+
+@media (min-width: 426px) and (max-width: 599px) {
+
+    .navbar{
+        height: 18vh;
+    }
+
+    .intro-text{
+        font-size: clamp(11px, 7vw, 18px);
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+    .bottom-navbar{
+        height: 5vh;
+        width: 100%;    
+    }
+
+    .bottom-navbar .logo1{
+        height: 5vh;
+        margin-left: 1vw;
+        margin-right: 1.5vw;
+    }
+
+    .link-H, .link-G, .link-A, .admin{
+        height: 4vh;
+        width: 9vw;
+        font-size: clamp(9px, 2.5vw, 11px);
+        padding: 0px;
+    }
+
+    .bottom-navbar form input{
+        height: 4vh;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+    .navbar{
+        height: 20vh;
+    }
+
+    .intro-text{
+        font-size: clamp(12px, 6vw, 20px);
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .bottom-navbar{
+        height: 5vh;
+        width: 100%;    
+    }
+
+    .bottom-navbar .logo1{
+        height: 5vh;
+        margin-left: 1vw;
+        margin-right: 1.5vw;
+    }
+
+    .link-H, .link-G, .link-A, .admin{
+        height: 4vh;
+        width: 8vw;
+        font-size: clamp(10px, 3vw, 12px);
+        padding: 0px;
+    }
+
+    .bottom-navbar form input{
+        height: 4vh;
+    }
+}
+
+/* -----------------------------------LAPTOP------------------------------------------- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .navbar{
+        height: 26vh;
+    }
+
+    .intro-text{
+        font-size: clamp(14px, 5vw, 24px);
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .bottom-navbar{
+        height: 6vh;
+        width: 100%;    
+    }
+
+    .bottom-navbar .logo1{
+        height: 6vh;
+        margin-left: 1vw;
+        margin-right: 1.5vw;
+    }
+
+    .link-H, .link-G, .link-A, .admin{
+        height: 4.5vh;
+        width: 7vw;
+        font-size: clamp(11px, 3.5vw, 13px);
+        padding: 0px;
+    }
+
+    .bottom-navbar form input{
+        height: 4.5vh;
+    }
+}
+
+/* ------------------------------------LAPTOP L---------------------------------------------- */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .navbar{
+        height: 28vh;
+    }
+
+    .intro-text{
+        font-size: clamp(16px, 4vw, 26px);
+        line-height: 1.7;
+        margin-bottom: 10px;
+    }
+
+    .bottom-navbar{
+        height: 6vh;
+        width: 100%;    
+    }
+
+    .bottom-navbar .logo1{
+        height: 6vh;
+        margin-left: 1vw;
+        margin-right: 1.5vw;
+    }
+
+    .link-H, .link-G, .link-A, .admin{
+        height: 4.8vh;
+        width: 6.5vw;
+        font-size: clamp(12px, 4vw, 14px);
+        padding: 0px;
+    }
+
+    .bottom-navbar form input{
+        height: 4.8vh;
+    }
+}
+
+/* -------------------------------------4K------------------------------------------ */
+
+@media (min-width: 1441px) {
+
+    .navbar{
+        height: 30vh;
+    }
+
+    .intro-text{
+        font-size: clamp(40px, 10vw, 45px);
+        line-height: 1.8;
+        margin-bottom: 5px;
+    }
+
+    .bottom-navbar{
+        height: 6vh;
+        width: 100%;    
+    }
+
+    .bottom-navbar .logo1{
+        height: 6vh;
+        margin-left: 1vw;
+        margin-right: 1.5vw;
+    }
+
+    .link-H, .link-G, .link-A, .admin{
+        height: 5vh;
+        width: 6vw;
+        font-size: clamp(14px, 3.5vw, 25px);
+        padding: 0px;
+    }
+
+    .bottom-navbar form input{
+        height: 5vh;
+        border-radius: 35px;
+        font-size: clamp(14px, 3.5vw, 25px);
+    }
+}

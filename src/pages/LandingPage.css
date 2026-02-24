@@ -1,0 +1,13 @@
+.landing-bg{
+    position: absolute;
+    inset: 0;
+    /* background-color: rgb(26, 6, 53); */
+    /* background-image: url('../assets/stars-bg.png'); */
+    background-repeat: repeat; 
+    background-size: contain;
+    opacity: 0.5;
+    z-index: -1;                 
+    pointer-events: none;        
+    background-attachment: fixed;
+    /* height: 1000vh; */
+}
