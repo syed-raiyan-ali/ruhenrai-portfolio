@@ -49,5 +49,6 @@ If you'd like to clone this repository and run it locally, follow these steps:
    ```bash
    git clone https://github.com/syed-raiyan-ali/ruhenrai-portfolio.git
    npm install
-   Add your Firebase environment variables in a .env file.
-   Start the development server: npm start
+   
+Add your Firebase environment variables in a .env file.
+Start the development server: npm start
