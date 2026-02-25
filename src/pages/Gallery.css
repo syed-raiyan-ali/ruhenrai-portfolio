@@ -10,7 +10,7 @@ html, body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  min-height: calc(100vh - 200px);
+  min-height: 100vh;
   background: #fff;
 }
 
@@ -18,8 +18,8 @@ html, body {
 .gallery-grid {
   flex: 1;
   padding: 2rem;
-  overflow-y: auto;
-  max-height: calc(100vh - 200px);
+  /* overflow-y: auto;
+  max-height: calc(100vh - 200px); */
 }
 
 /* Grid container */
