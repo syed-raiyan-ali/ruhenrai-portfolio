@@ -26,13 +26,16 @@ Check out the live site here: [Ruhen Rai Portfolio](https://ruhenrai-portfolio.w
 * **Cloudinary:** Cloud-based image and video management/storage.
 * **Firebase Hosting:** Deployed and hosted via Firebase.
 
-## 📸 Screenshots
+## 📸 Screenshots/Preview
 
-*(Note: Add screenshots of your app to an `assets` folder and update the links below!)*
+* ### **Home/Gallery:** ![Gallery View](./src/assets/gallery1.png)
 
-* **Home/Gallery:** `![Gallery View](./assets/gallery.jpg)`
-* **About Page:** `![About View](./assets/about.jpg)`
-* **Admin Panel:** `![Admin View](./assets/admin.jpg)`
+* ### **Home Page:** ![Home View](./src/assets/main1.png)
+
+* ### **Admin Panel:** <br/>
+* #### Logged Out: <br/> 
+* <img src="./src/assets/admin1.png"/> <br/>
+* #### Logged In: <br/> <br/> <img src="./src/assets/admin2.png"/>
 
 ## 🚀 Getting Started (Local Development)
 
