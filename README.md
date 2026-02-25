@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Ruhen Rai - Graphic Design Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional, fully responsive portfolio web application built to showcase graphic design work, visual storytelling, and digital experiences. The site is designed for easy navigation by recruiters and clients, featuring a dynamic gallery and a custom, secure backend for content management.
 
-## Available Scripts
+Check out the live site here: [Ruhen Rai Portfolio](https://ruhenrai-portfolio.web.app)
 
-In the project directory, you can run:
+## ✨ Key Features
 
-### `npm start`
+* **Dynamic Gallery & Filtering:** A masonry-style gallery layout with extensive filtering options (by tags like Poster, Magazine, Japanese, Typography, etc.) and sorting capabilities (Newest first).
+* **Secure Admin Dashboard:** A protected `/admin` route that utilizes Firebase Authentication. Authorized users (the portfolio owner) can log in to directly upload new images or videos.
+* **Cloud Media Management:** Seamless integration with Cloudinary for fast, optimized, and reliable media storage and delivery.
+* **Real-time Database:** Uses Firebase Firestore to store and query media metadata (titles, tags, timestamps) instantly.
+* **Responsive Multi-page Layout:** Built with React Router for smooth, client-side navigation across the Home, Gallery, About, and Admin pages, fully optimized for both desktop and mobile viewing.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Frontend:**
+* **React.js:** Core framework utilizing modern functional components and hooks (`useState`, `useEffect`, `useMemo`, `useLocation`, `useNavigate`).
+* **React Router DOM:** For seamless multi-page routing.
+* **JavaScript (ES6+)**
+* **HTML5 & CSS3:** Custom styling for a bold, brand-specific aesthetic.
 
-### `npm test`
+**Backend & Services:**
+* **Firebase Authentication:** Google Provider login and state management (`signInWithPopup`, `onAuthStateChanged`).
+* **Firebase Firestore:** NoSQL database for managing portfolio items.
+* **Cloudinary:** Cloud-based image and video management/storage.
+* **Firebase Hosting:** Deployed and hosted via Firebase.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📸 Screenshots
 
-### `npm run build`
+*(Note: Add screenshots of your app to an `assets` folder and update the links below!)*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Home/Gallery:** `![Gallery View](./assets/gallery.jpg)`
+* **About Page:** `![About View](./assets/about.jpg)`
+* **Admin Panel:** `![Admin View](./assets/admin.jpg)`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started (Local Development)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you'd like to clone this repository and run it locally, follow these steps:
 
-### `npm run eject`
+### Prerequisites
+* Node.js and npm installed.
+* A Firebase project set up with Authentication and Firestore enabled.
+* A Cloudinary account.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/syed-raiyan-ali/ruhenrai-portfolio.git
+   npm install
+   
+2. Add your Firebase environment variables in a .env file.
+3. Start the development server: npm start
